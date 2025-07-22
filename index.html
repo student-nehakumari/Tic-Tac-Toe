@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <h1>Tic-Tac-Toe</h1>
+        <div class="container">
+            <div class="game">
+                <!-- we need 9 boxes which when clicked give x or 0 -->
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+    </main>
+    <!-- giving the winning message -->
+     <div class="msg-container hide"> <!-- giving it a hide class since at beginning we don't want to show message -->
+        <p id="msg"> Winner</p> <!--winning message -->
+        <!-- new game button -->
+        <button id="new-game">New Game</button>
+     </div>
+    <button id="reset">Reset Game</button>
+    <script src="script.js"></script>
+    <!-- winning sound -->
+    <audio id="win-sound" src="winning-sound.wav"></audio>
+</body>
+</html>

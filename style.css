@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+    color: azure;
+    text-decoration: underline;
+}
+body{
+    background-image:url(game.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.container{
+    height: 65vh;
+    text-align: center;
+    /* now we need to take the game div into center */
+    display:flex; 
+    /*to take the boxes to center(1st game then container)*/
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 55vmin;
+    width: 55vmin;
+    display:flex; /*all boxes in one line */
+    flex-wrap:wrap;  /*all boxes in correct positions*/
+    /*to take the boxes to center of game box*/
+    justify-content: center;
+    align-items: center;
+    gap:2vmin;  /*make a gap between divs */
+}
+/* since the box height is 60vimn and in one row we need 3 boxes, so height is 20vim approx(18vmin) */
+
+.box{
+    height: 16vmin;
+    width: 16vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 7vmin;
+    color:#746405;
+    background-color: bisque;
+}
+/*reset button*/
+#reset{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: bisque;
+    color:#746405;
+    border-radius: 1rem;
+    border: none;
+}
+
+/* styling the message container */
+/* new game button */
+#new-game{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: bisque;
+    color:#746405;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 5px;
+}
+/* winning message */
+#msg{
+    color:azure;
+    font-size: 7vmin;
+    margin-bottom:10px;
+}
+
+/* hiding the winner message */
+.hide{
+    display: none;
+}
+
+/* adding different colors to X and O */
+.X{
+    color:rgb(153, 22, 22);
+    font-weight: bold;
+}
+.O{
+    color:rgb(26, 26, 150);
+    font-weight: bold;
+}
